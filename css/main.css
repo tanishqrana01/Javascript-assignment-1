@@ -1,0 +1,98 @@
+/*body and h1 button*/
+
+body, h1, p, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background gradient for the body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #262626, #333333); /* Dark theme gradient */
+  color: #fff; /* Text color */
+  margin: 0;
+}
+
+/* Style the container with a card-like appearance */
+.container {
+  text-align: center;
+  background-color: #7a6666; /* Darker background */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  width: 80%;
+  max-width: 500px;
+}
+
+/* Style the heading */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4a90e2; /* Accent color */
+}
+
+/* Style the button container */
+.buttons {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Style individual buttons */
+button {
+  background-color: #cd0b0e; /* Accent color */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin: 5px;
+  padding: 15px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #357ab8; /* Darker accent color */
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Style the story output text */
+#storyOutput {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #555;
+  background-color: #0e508b; /* Darker background */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+  min-height: 50px;
+  transition: background-color 0.3s;
+}
+
+/* Add some responsive design for small screens */
+@media (max-width: 500px) {
+  .container {
+      padding: 20px;
+  }
+  
+  button {
+      padding: 10px 15px;
+      font-size: 0.9rem;
+      
+  }
+  
+  #storyOutput {
+      font-size: 1rem;
+      padding: 10px;
+  }
+}
